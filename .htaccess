@@ -1,0 +1,7 @@
+ErrorDocument 404 /404.html
+
+AddType text/html .shtml
+AddHandler server-parsed .html
+
+
+

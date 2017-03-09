@@ -1,0 +1,474 @@
+
+
+/* --- CSS Imports --- */
+@import url(https://fonts.googleapis.com/css?family=Lato:700,400);
+@import url(https://fonts.googleapis.com/css?family=Kanit:700,600,500,400);
+@import url(https://fonts.googleapis.com/css?family=Roboto:100,300,400,700,500);
+
+
+
+/* --------------------------------------
+   Global Styles
+   -------------------------------------- */
+
+html {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 100%; 
+    height: 100%;
+    margin : 0px;
+    padding : 0px;
+    font-family:'Lato', sans-serif;
+    font-size: 16px;
+}
+
+body h1 {
+    font-size: 3em;
+    text-align: center;
+    font-variant: small-caps;
+}
+
+body h2 {
+    font-size: 2.5em;
+    text-align: center;
+    font-variant: small-caps;
+}
+
+body h3 {
+    font-size: 2em;
+    text-align: center;
+    font-variant: small-caps;
+}
+
+body h4 {
+    font-size: 1.5em;
+    text-align: center;
+    font-variant: small-caps;
+}
+
+/* --------------------------------------
+   Global Styles
+   -------------------------------------- */
+
+.btn-primary-light {
+
+    display: inline-block;
+    font-family:'Lato', sans-serif;
+    font-weight: 700;
+    font-size: 1.25em;
+    text-align: center;
+    text-decoration: none;
+    padding: 0.4em 1em;
+
+    background-color: #00aaff;
+    border: none;
+    border-radius: 5px;
+    
+    border-radius: 3px;
+    box-shadow: 0px 1px 2px #888888;
+    color: #FFFFFF;
+
+    cursor: pointer;
+
+}
+
+.btn-primary-light:hover{
+    text-decoration: none;
+    color: #FFFFFF;
+    background-color: #006cff;
+}
+
+.heading-underline{
+    border: none;
+    width: 100px;
+    margin : 1em auto 0.2em auto;
+    height: 4px;
+    color: #00aaff;
+    background-color: #00aaff;
+}
+
+/* --- Global Navbar --- */
+#mainNavbar {
+    color : #ffffff;
+    background-color: #00aaff;
+    border-radius: 0px;
+    margin: 0px;
+    border: none;
+    height: 50px;
+}
+
+#mainNavbar .container-fluid {
+    padding: 0px 15px 0px 15px;
+    height: 100%;
+}
+
+#mainNavbar #mainNavbarHeader {
+    color : #ffffff;
+    height: 30px;
+    display: inline;
+    position: relative;
+    top: 50%;
+    transform: translate(0%, -50%);
+}
+
+#mainNavbar #mainNavbarHeader .icon-bar {
+    background-color : #ffffff;
+}
+
+#mainNavbar #mainNavbarHeader .navbar-brand {
+    height: 100%;
+    margin: 0px;
+    padding: 5px;
+    color : inherit;
+    font-size : 2em;
+    font-variant: small-caps;
+}
+
+
+#mainNavbar #mainNavbarContent li a{
+    vertical-align: central;
+    height: 80%;
+    margin: 10px;
+    padding: 5px;
+    color : #FFFFFF;
+    font-size : 1.5em;
+    font-variant: small-caps;
+}
+
+.glowing-border {
+    border: 1px solid #00aaff;
+    border-radius: 7px;
+}
+
+.glowing-border:focus { 
+    outline: none;
+    box-shadow: 0 0 10px #00aaff;
+}
+
+
+/* --------------------------------------
+   Homepage Styles
+   -------------------------------------- */
+
+#homepage #mainContainer {
+    height: 100%;
+}
+
+#homepage #banner-img{
+    position: relative;
+    
+    max-height: 30%;
+    max-width: 60%;
+    height:auto;
+    width:auto;
+    margin-top : 4em;
+    
+    top: 0%;
+    left: 50%;
+    transform : translate(-50%, 0%);
+}
+
+#homepage #mainContainer .row {
+    padding-top : 4em;
+}
+
+#homepage #mainContainer .col-sm-6 {
+    min-height : 15em;
+    padding: 0em 4em 0em 4em;
+}
+
+#homepage #mainContainer .square {
+    
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 15em;
+    height: 15em;
+    
+    background-color : #00aaff;
+    box-shadow: 0px 1px 2px #888888; 
+    
+    transition-timing-function: ease;
+    transition: width 0.4s, height 0.4s;
+    -webkit-transition: width 0.4s, height 0.4s; /* Safari */
+}
+
+#homepage #mainContainer .square:hover{
+    width: 20em;
+    height: 10em;
+    color: #FFFFFF;
+    background-color: #0081c1;
+}
+
+#homepage #mainContainer .col-sm-6 .square a {
+
+    display: inline-block;
+    position: relative;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: 100%;
+    
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+#homepage #mainContainer .square a h2{
+    position: relative;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+/* --------------------------------------
+   Login Page Styles
+   -------------------------------------- */
+
+#login-page #mainContainer {
+    height: 100%;
+}
+
+#login-page #banner-img{
+    position: relative;
+    
+    max-height: 30%;
+    max-width: 60%;
+    height:auto;
+    width:auto;
+    margin-top : 4em;
+    
+    top: 0%;
+    left: 50%;
+    transform : translate(-50%, 0%);
+}
+
+#login-page #login-form {
+    display: table;
+    position: relative;
+    left: 50%;
+    transform : translate(-50%, 0%);
+    margin: 4em 0em 0em 0em;
+}
+
+#login-page #login-form .input-textfield {
+    color: #000000;
+    font-size: 1.25em;
+    border-radius: 8px;
+    width: 300px;
+    padding: 7px;
+    margin: 0.5em;
+}
+
+#login-page #login-form #login-button{
+    position: relative;
+    width: 60%;
+    left: 50%;
+    margin: 0.5em 0 0 0;
+    transform: translate(-50%, 0%);
+
+    transition-timing-function: ease;
+    transition: width 0.3s;
+    -webkit-transition: width 0.3s; /* Safari */
+    
+}
+
+#login-page #login-form #login-button:hover{
+    width: 80%;
+}
+
+/* --------------------------------------
+   Signup Page Styles
+   -------------------------------------- */
+
+#signup-page #mainContainer {
+    height: 100%;
+}
+
+#signup-page #banner-img{
+    position: relative;
+    
+    max-height: 30%;
+    max-width: 60%;
+    height:auto;
+    width:auto;
+    margin-top : 4em;
+    
+    top: 0%;
+    left: 50%;
+    transform : translate(-50%, 0%);
+}
+
+#signup-page #signup-form {
+    display: table;
+    position: relative;
+    left: 50%;
+    transform : translate(-50%, 0%);
+    margin: 4em 0em 0em 0em;
+}
+
+#signup-page #signup-form .input-textfield {
+    color: #000000;
+    font-size: 1.25em;
+    border-radius: 8px;
+    width: 300px;
+    padding: 7px;
+    margin: 0.5em;
+}
+
+#signup-page #signup-form #signup-button{
+    position: relative;
+    width: 60%;
+    left: 50%;
+    margin: 0.5em 0 0 0;
+    transform: translate(-50%, 0%);
+
+    transition-timing-function: ease;
+    transition: width 0.3s;
+    -webkit-transition: width 0.3s; /* Safari */
+    
+}
+
+#signup-page #signup-form #signup-button:hover{
+    width: 80%;
+}
+
+/* --------------------------------------
+   Leaderboard Styles
+   -------------------------------------- */
+
+#leaderboard #leader-table {
+    position: relative;
+    min-width: 40%;
+    left: 50%;
+    transform : translate(-50%, 0%);
+    
+    margin-top: 4em;
+}
+
+#leaderboard #leader-table tr{
+    border: 1px solid black;
+}
+
+#leaderboard #leader-table tr.light-row {
+    background-color: #ffffff;
+}
+
+#leaderboard #leader-table tr.dark-row {
+    background-color: #c9c9c9;
+}
+
+#leaderboard #leader-table .cur-team{
+    background-color: #44dd44;
+}
+
+#leaderboard #leader-table th{
+    background-color: #35b5ff;
+    padding: 5px 15px 5px 15px;
+    text-align : center;
+}
+
+#leaderboard #leader-table td{
+    padding: 5px 15px 5px 15px;
+    text-align : center;
+}
+
+/* --------------------------------------
+   Question Page Styles
+   -------------------------------------- */
+
+#question-page .question-img {
+    position: relative;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    margin: 0em 0em 0em 0em;
+    max-height: 60%;
+    max-width: 100%;
+    height:auto;
+    width:auto;
+}
+
+#question-page #answer-form {
+    margin: 2em 0em 0em 0em;
+}
+
+#question-page #answer-form #answer-field {
+    position: relative;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    color: #000000;
+    font-size: 1.25em;
+    border-radius: 8px;
+    width: 80%;
+    padding: 7px;
+    margin: 0.5em;
+}
+
+#question-page .question-txt {
+    position: relative;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    text-align: center;
+    font-size: 1.5em;
+}
+
+
+/* --------------------------------------
+   Media Queries
+   -------------------------------------- */
+
+/* Portrait Phone */
+@media screen and (max-width: 425px) {
+
+    /* --- Global --- */
+    body {
+        font-size: 12px;
+    }
+    
+    #question-page #answer-form #answer-field{
+         width: 80%;
+    }
+    
+    #question-page .question-img{
+        width: 100%;
+    }
+
+}
+
+
+/* Landscape Phone to Portrait Tablet */
+@media screen and (min-width: 426px) and (max-width: 767px) {
+
+    /* --- Global --- */
+    body {
+        font-size: 12px;
+    }
+}
+
+
+/* Landscape Tablet to Small Desktop*/
+@media screen and (min-width:768px) and (max-width: 991px) {
+
+    /* --- Global --- */
+    body {
+        font-size: 14px;
+    }
+
+}
+
+
+/* Small Desktop to Medium Desktop*/
+@media screen and (min-width:992px) and (max-width: 1199px) {
+
+    /* --- Global --- */
+    body {
+        font-size: 14px;
+    }
+
+}
